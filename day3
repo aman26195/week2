@@ -1,0 +1,44 @@
+public class Employee {
+
+    // Properties
+    private int salary;
+    private String name;
+
+    // Constructor
+    public Employee(int initialSalary, String initialName) {
+        this.salary = initialSalary;
+        this.name = initialName;
+    }
+
+    // Getter for Salary
+    public int getSalary() {
+        return salary;
+    }
+
+    // Getter for Name
+    public String getName() {
+        return name;
+    }
+
+    // Setter for Name
+    public void setName(String newName) {
+        this.name = newName;
+    }
+
+    // Main method for testing
+    public static void main(String[] args) {
+        // Creating an Employee instance
+        Employee employee = new Employee(50000, "John Doe");
+
+        // Displaying initial details
+        System.out.println("Initial Name: " + employee.getName());
+        System.out.println("Initial Salary: $" + employee.getSalary());
+
+        // Changing the name using the setter
+        employee.setName("Jane Doe");
+
+        // Displaying updated details
+        System.out.println("Updated Name: " + employee.getName());
+        System.out.println("Salary: $" + employee.getSalary());
+    }
+}
